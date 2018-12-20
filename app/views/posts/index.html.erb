@@ -1,0 +1,29 @@
+<h1>Posts</h1>
+
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>
+				Hours
+			</th>
+			<th>
+				Date
+			</th>
+			<th class='hidden-xs'>
+				Work Performed
+			</th>
+			<th>
+				Status
+			</th>
+			<th></th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody id="posts">
+		<%= render @posts %>
+	</tbody>
+</table>
+
+<div id="paginator">
+	<%= paginate @posts, remote: true %>
+</div>
