@@ -12,6 +12,6 @@ Rails.application.configure do
   config.active_support.deprecation = :notify
   config.log_formatter = ::Logger::Formatter.new
   config.active_record.dump_schema_after_migration = false
-  config.serve_static_assets = true
+  config.serve_static_assets = false
   config.action_mailer.default_url_options = { :host => 'wlp-overtime.herokuapp.com' }
 end
